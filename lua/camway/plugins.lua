@@ -50,10 +50,13 @@ return require('packer').startup(function(use)
     }
 
     use("folke/zen-mode.nvim")
-    --  use("github/copilot.vim")
+    use("github/copilot.vim")
     use("lervag/vimtex")
     use {
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+    use('tmsvg/pear-tree')
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+    use('scrooloose/nerdtree')
 end)
